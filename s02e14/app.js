@@ -16,3 +16,10 @@ function b() {
 a();
 var d;
 
+// so, throghout the execution of this script, we'll have on 
+// the stack:
+// global
+// a, global
+// b, a, global
+// a, global
+// global
