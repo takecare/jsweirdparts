@@ -5,8 +5,9 @@
 b();
 
 // the same doesn't happen with variables, as assignments only occur
-// when the code is actually run... still, the variable has been setup!
-// if you remove the assignment you'll get an error!
+// when the code is actually run... still, the variable has been setup,
+// i.e. the memory space is reserved, but set to 'undefined'
+// if you remove line 12 you'll get an error!
 console.log(a);
 
 var a = 'Hello World!';
