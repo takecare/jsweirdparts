@@ -9,7 +9,7 @@ function greet() {
 
 // here you can actually see an expression that gets executed during the
 // execution phase.
-var anonymousGreet = function f() {
+var anonymousGreet = function canHaveNameHereButItIsUseless() {
 	console.log('hello there!');
 }
 
@@ -21,8 +21,8 @@ function hoisted() {
 	console.log('i support hoisting because i\'m declared, in a function statement');
 }
 
-//anonymous(); // uncomment me to see...
-var anonymous = function canHaveNameHereButItIsUseless() {
+//anonymous(); // uncomment me to see that i'll cause an error!
+var anonymous = function() {
 	console.log('as i\'m only declared during the exec phase, this won\'t work');
 }
 
